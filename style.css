@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.container{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+
+
+    display: flex;
+    align-items:center ; 
+    justify-content: center;
+}
+
+.loginbox{
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5)
+}
+
+.heading{
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 30px 80px;
+}
+
+.loginbox .form{
+    padding: 10px 30px 50px 30px;
+}
+
+.loginbox .form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.loginbox .form .field input{
+    padding-left: 12px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+}
+
+.loginbox .form .field label{
+    position: absolute;
+    font-size: 17px;
+    top: 23%;
+    left: 7%;
+    transition: all 0.3s ease;
+}
+.loginbox .form .field input:focus{
+    border-color: #4158d0;
+}
+
+.loginbox .form .field input:focus ~ label,
+.loginbox .form .field input:valid ~ label{
+    font-size: 18px;
+    margin-left: 5px;
+    top:0%;
+    font-size: 16px;
+    color: #4158d0;
+    background-color: white;
+    transform: translate(-2px,-12px);
+}
+
+.loginbox .form .pass-setting .pass-link{
+    margin: 18px 0px 3px 11px;
+}
+
+.loginbox .form .pass-setting .remember{
+    margin: 18px 0px 3px 11px;
+}
+
+.loginbox .form .pass-setting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginbox .form .pass-link .sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.loginbox .form .pass-link a{
+    color: #4158d0;
+    text-decoration: none;
+}
+
+.loginbox .form .field input[type="submit"]{
+    color: white;
+    font-size: 20px;
+    font-weight:800;
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+}
